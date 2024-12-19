@@ -1,13 +1,10 @@
 package com.example.core.di
 
 import dagger.Component
-import retrofit2.Retrofit
 
 @NetworkScope
 @Component(modules = [RetrofitModule::class])
-interface NetworkComponent {
-
-    fun getRetrofits(): Set<Retrofit>
+interface NetworkComponent : NetworkApi {
 
     companion object {
         @Volatile

@@ -1,7 +1,5 @@
 package com.example.home.data
 
-import com.example.core.di.Retrofit1
-import com.example.core.di.Retrofit2
 import retrofit2.Retrofit
 import javax.inject.Inject
 

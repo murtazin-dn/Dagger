@@ -1,5 +1,6 @@
 package com.example.dagger.di
 
+import com.example.core.di.NetworkApi
 import com.example.core.di.NetworkComponent
 import dagger.Module
 import dagger.Provides
@@ -10,5 +11,5 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit() = NetworkComponent.init().getRetrofits()
+    fun provideNetworkApi(): NetworkApi = NetworkComponent.init()
 }

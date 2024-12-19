@@ -1,11 +1,10 @@
 package com.example.dagger.di
 
+import com.example.core.di.NetworkApiProvider
 import dagger.Component
-import retrofit2.Retrofit
 import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [AppModule::class])
-interface AppComponent {
-    fun getRetrofits(): Set<Retrofit>
+interface AppComponent: NetworkApiProvider {
 }
